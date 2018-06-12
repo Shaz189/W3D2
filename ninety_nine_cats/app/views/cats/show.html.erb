@@ -1,0 +1,41 @@
+<div class="">
+  <%= "#{@cat.name}" %>
+</div>
+
+<table>
+  <tr class="col_name">
+    <th>name</th>
+    <th>color</th>
+    <th>age</th>
+    <th>description</th>
+    <th>gender</th>
+  </tr>
+  <tr>
+    <td><%= @cat.name %> </td>
+    <td><%= @cat.color %> </td>
+    <td><%= @cat.age %> </td>
+    <td><%= @cat.description %> </td>
+    <td><%= @cat.sex %></td>
+  </tr>
+</table>
+<!-- 
+    <ul> 
+      <li id='cat_stats'>age
+      <li> <%= @cat.age %> </li>
+      </li>
+      <li id='cat_stats'>color
+      <li> <%= @cat.color %> </li>
+      </li>
+      <li id='cat_stats'>birth_date
+      <li> <%= @cat.birth_date %> </li>
+      </li>
+      <li id='cat_stats'>description
+      <li> <%= @cat.description %> </li>
+      </li>
+      <li id='cat_stats'>gender
+      <li> <%= @cat.sex %> </li>
+      </li>
+    </ul> -->
+
+
+<a href=" <%= cats_url %> ">home</a>

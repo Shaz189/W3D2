@@ -1,0 +1,27 @@
+<h1>New Page</h1>
+
+<a href=" <%= cats_url %> ">cats_url</a>
+
+<form action="<%= cats_url %>" method="post">
+<label for="name">Name</label> <br>
+<input id="name" type="text" name="cat[name]" value="name"> <br>
+<label for="color">Color</label>
+<select id="color" name="cat[color]">
+  <option value="">choose a color</option>
+  <!-- <option value="black">black</option>
+  <option value=""></option> -->
+  <% @colors.each do |col| %>
+    <option value="<%= col%>"> <%= "#{col}" %> </option>
+  <% end %>
+</select> <br>
+<label for="sex">Gender</label> <br>
+  <input type="radio" name="cat[sex]" value="M"> Male <br>
+  <input type="radio" name="cat[sex]" value="F"> Female <br>
+<label for="birth_date">Birth Date</label>
+<input id="birth_date" type="date" name="cat[birth_date]"> <br>
+<label for="description">Description</label> <br>
+<textarea id="description" rows="4" cols="50" type="textarea" name="cat[description]">  
+</textarea>
+<input type="submit" value="submit">
+</form>
+
